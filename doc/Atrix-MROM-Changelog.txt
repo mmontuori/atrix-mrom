@@ -1,3 +1,12 @@
+Atrix-MROM Changelog Alpha 1
+- 8/11/2012: Switch /mnt/sdcard and /mnt/emmc
+- 8/11/2012: SymLink /mnt/sdcard-ext /mnt/emmc for correct Atrix Operations
+- 8/12/2012: Recompiled kernel from atrix-dev-team source code
+- 8/12/2012: Recompiled WI-FI module dhd.ko from source code
+- 8/12/2012: Included Google Base Framework
+
+
+
 NEUTRINO
 - Massive 54% cut in size
 CM7 + gapps = ~150mb uncompressed,
