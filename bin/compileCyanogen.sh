@@ -11,23 +11,27 @@ export CM_BUILDTYPE=EXPERIMENTAL
 
 if [ "$1" == "sync" ]; then
 	sync_repo
+	exit
 fi
 
-cd $SYS_DIR
+cd $REPO_HOME/cm_system
 
-mmontuori_files=`find . | grep mmontuori`
+files=`find .`
 
-for mmontuori_file in $mmontuori_files; do
-	cm_file=`echo $mmontuori_file | sed 's/.mmontuori//g'`
-	if ! diff $mmontuori_file $cm_file>/dev/null; then
-		echo Applying changes to $cm_file from $mmontuori_file...
-		if ! test -f "${cm_file}.cm_orig"; then
-			echo copying $cm_file to ${cm_file}.cm_orig...
-			cp $cm_file ${cm_file}.cm_orig
-		fi
-		cp $mmontuori_file $cm_file
+for file in $files; do
+	#echo $file
+	#echo $CM_DIR/$file
+	if ! diff $file $CM_DIR/$cm_file>/dev/null; then
+		echo Applying changes to $CM_DIR/$cm_file from $file...
+		#if ! test -f "${cm_file}.cm_orig"; then
+			#echo copying $cm_file to ${cm_file}.cm_orig...
+			#cp $cm_file ${cm_file}.cm_orig
+		#fi
+		#cp $mmontuori_file $cm_file
 	fi
 done
+
+exit
 
 #cd packages/apps/Settings/res
 
@@ -39,6 +43,8 @@ done
 #		sed -i s/CyanogenMod/Atrix-MROM/g $file.mmontuori
 #	fi
 #done
+
+cd $CM_DIR
 
 . build/envsetup.sh
 

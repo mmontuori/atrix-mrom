@@ -1,15 +1,16 @@
 #!/bin/bash
 
-export PATH=~/android/jdk1.6.0_33/bin:$PATH:~/android/android-sdk-linux/platform-tools
-#export PATH=$PATH:~/android/android-sdk-linux/platform-tools
-
+export SDK_HOME=~/android/android-sdk-linux
 export JAVA_HOME=~/android/jdk1.6.0_33
+export REPO_HOME=~/git_repos/atrix-mrom
 
-export BASE_DIR=~/android
-export SYS_DIR=$BASE_DIR/system
-export KERNEL_DIR=$BASE_DIR/kernel
+export PATH=${JAVA_HOME}/bin:$PATH:${SDK_HOME}/platform-tools
+#export PATH=$PATH:${SDK_HOME}/platform-tools
+
+export CM_DIR=~/android/system
+export KERNEL_DIR=~/android/kernel
 export BOOT_DIR=$KERNEL_DIR/boot-new
-#export CCOMPILER=$SYS_DIR/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+#export CCOMPILER=$CM_DIR/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 export CCOMPILER=arm-linux-gnueabi-
 
 export CM_BUILDTYPE=UNOFFICIAL
@@ -25,8 +26,8 @@ function init_repo {
 if ! test -d ~/bin; then
         mkdir -p ~/bin
 fi
-if ! test -d $SYS_DIR; then
-        mkdir -p $SYS_DIR
+if ! test -d $CM_DIR; then
+        mkdir -p $CM_DIR
 fi
 
 if ! test -f ~/bin/repo; then
@@ -34,7 +35,7 @@ if ! test -f ~/bin/repo; then
         chmod a+x ~/bin/repo
 fi
 
-cd $SYS_DIR
+cd $CM_DIR
 
 if ! test -d .repo; then
         repo init -u git://github.com/CyanogenMod/android.git -b gingerbread
@@ -47,22 +48,22 @@ fi
 export -f init_repo
 
 function check_proprietary_files {
-if ! test -f $SYS_DIR/vendor/motorola/olympus/proprietary/lib/libnvmm_camera.so; then
-        cd $SYS_DIR/device/motorola/olympus/
+if ! test -f $CM_DIR/vendor/motorola/olympus/proprietary/lib/libnvmm_camera.so; then
+        cd $CM_DIR/device/motorola/olympus/
         ./extract-files.sh
 fi
 }
 export -f check_proprietary_files
 
 function check_rom_manager {
-if ! test -f $SYS_DIR/vendor/cyanogen/proprietary/RomManager.apk; then
-        $SYS_DIR/vendor/cyanogen/get-rommanager
+if ! test -f $CM_DIR/vendor/cyanogen/proprietary/RomManager.apk; then
+        $CM_DIR/vendor/cyanogen/get-rommanager
 fi
 }
 export -f check_rom_manager
 
 function sync_repo {
-cd $SYS_DIR
+cd $CM_DIR
 
 repo sync
 }
