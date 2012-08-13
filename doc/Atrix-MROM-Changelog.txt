@@ -1,4 +1,7 @@
 Atrix-MROM Changelog Alpha 1
+- 8/9/2012: Recompiled CyanogenMod 7.2
+- 8/10/2012: Recompiled CyanogenMod Atrix Kernel, branch of faux123
+- 8/10/2012: Recompiled proprietary wi-fi Atrix 4G kernel module
 - 8/11/2012: Switch /mnt/sdcard and /mnt/emmc
 - 8/11/2012: SymLink /mnt/sdcard-ext /mnt/emmc for correct Atrix Operations
 - 8/12/2012: Recompiled kernel from atrix-dev-team source code
