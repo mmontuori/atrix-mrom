@@ -9,6 +9,7 @@ Atrix-MROM Changelog Alpha 1
 - 8/12/2012: Included Google Base Framework
 - 8/13/2012: Removed automatic error reporting
 - 8/13/2012: Changed boot animation
+- 8/13/2012: Install non market apps enabled by default
 
 
 NEUTRINO
