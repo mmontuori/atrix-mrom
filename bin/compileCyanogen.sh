@@ -16,22 +16,16 @@ fi
 
 cd $REPO_HOME/cm_system
 
-files=`find .`
+files=`find * -type f`
 
 for file in $files; do
-	#echo $file
-	#echo $CM_DIR/$file
-	if ! diff $file $CM_DIR/$cm_file>/dev/null; then
+	#echo file:$file
+	#echo cm_file:$CM_DIR/$file
+	if ! diff $file $CM_DIR/$file>/dev/null; then
 		echo Applying changes to $CM_DIR/$cm_file from $file...
-		#if ! test -f "${cm_file}.cm_orig"; then
-			#echo copying $cm_file to ${cm_file}.cm_orig...
-			#cp $cm_file ${cm_file}.cm_orig
-		#fi
-		#cp $mmontuori_file $cm_file
+		cp $file $CM_DIR/$file
 	fi
 done
-
-exit
 
 #cd packages/apps/Settings/res
 
