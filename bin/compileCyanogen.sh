@@ -22,10 +22,18 @@ for file in $files; do
 	#echo file:$file
 	#echo cm_file:$CM_DIR/$file
 	if ! diff $file $CM_DIR/$file>/dev/null; then
-		echo Applying changes to $CM_DIR/$cm_file from $file...
-		cp $file $CM_DIR/$file
+		if [ "$1" != "diff" ]; then
+			echo Applying changes to $CM_DIR/$cm_file from $file...
+			cp $file $CM_DIR/$file
+		else
+			echo files $CM_DIR/$cm_file and $file are different...
+		fi
 	fi
 done
+
+if [ "$1" == "diff" ]; then
+	exit
+fi
 
 #cd packages/apps/Settings/res
 

@@ -31,22 +31,7 @@ public class ReportingService extends Service {
 
     @Override
     public void onCreate() {
-        if (isFirstBoot()) {
-            promptUser();
-            Log.d(TAG, "Prompting user for opt-in.");
-        } else if (canReport() == true) {
-            Log.d(TAG, "User has opted in -- reporting.");
-            Thread thread = new Thread() {
-                @Override
-                public void run() {
-                    report();
-                }
-            };
-            thread.start();
-        } else {
-            Log.d(TAG, "User has not opted in -- skipping reporting.");
-	    stopSelf();
-        }
+    	stopSelf();
     }
 
     private boolean isFirstBoot() {
