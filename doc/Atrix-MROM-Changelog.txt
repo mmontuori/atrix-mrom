@@ -10,7 +10,6 @@ Atrix-MROM Changelog Alpha 1
 - 8/13/2012: Removed automatic error reporting
 - 8/13/2012: Changed boot animation
 - 8/13/2012: Install non market apps enabled by default
-- 8/14/2012: Replaced Galley3D with QuickPic Gallery
 - 8/14/2012: Replaced ADWLauncher with HaloLauncher
 - 8/14/2012: Updated Superuser application
 - 8/14/2012: Added MIUI Camera
