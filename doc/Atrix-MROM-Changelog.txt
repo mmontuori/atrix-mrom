@@ -13,25 +13,13 @@ Atrix-MROM Changelog Alpha 1
 - 8/14/2012: Replaced ADWLauncher with HaloLauncher
 - 8/14/2012: Updated Superuser application
 - 8/14/2012: Added MIUI Camera
+- 8/14/2012: Set Dalvik Heap Size to 96m, optimum for Atrix
+- 8/14/2012: Added QuickPic Gallery App
 
 
 NEUTRINO
-- Massive 54% cut in size
-CM7 + gapps = ~150mb uncompressed,
-Neutrino ROM = ~80mb uncompressed.
-Results in a much snappier, unsluggish and fast experience.
-- Beautiful theme
-Minimalistic styled theme, Slim Roboto fonts and bits of ICS, such as ICS animations.
-- MIUI camera
-MUCH higher quality camera with touch to focus.
-- PNG Optimized/Zipaligned
-Uses DarkyROM's fast zipalignment to increase RAM efficiency. All system .apk's are also PNG optimised to make .apks smaller.
 - Wi-Fi/3G tweaks
 Tweaked net buffer size and added network init.d scripts for faster 3g/Wi-Fi.
-- Increased Dalvik cache to 128m
-Increased efficiency with demanding apps and increases smoothness.
-- Reduced background processes
-Removed logcat and CMstats as well as unnecessary Google bloatware to increase snappiness and battery life.
 - Android 4.0 ICS Fuju Tweaks
 Results in ICS smoothness and responsiveness.
 - Touch response Tweaks

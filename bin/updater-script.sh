@@ -1,7 +1,16 @@
 #!/bin/sh
 
-echo 'mount("ext4", "EMMC", "/dev/block/mmcblk0p12", "/system");'
-echo 'package_extract_dir("data", "/data");'
-echo 'set_perm(0, 0, 0644, "/data/app");'
-echo 'set_perm(0, 0, 0755, "/data/data/com.alensw.PicFolder/lib/libqpicjni88.so");'
+cur_dir=`pwd`
+echo 'mount("ext3", "EMMC", "/dev/block/mmcblk0p16", "/data");'
+cd ~/android/apk
+for file in `find data/app/*`; do
+	echo "package_extract_file(\"$file\", \"/$file\");"
+	echo "set_perm(0, 0, 0777, \"/$file\");"
+done
+
+for file in `find data/data/*/lib/*`; do
+	echo "package_extract_file(\"$file\", \"/$file\");"
+	echo "set_perm(0, 0, 0777, \"/$file\");"
+done
+
 echo 'unmount("/data");'

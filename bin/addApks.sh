@@ -34,9 +34,10 @@ cd $APK_DIR
 zip -r $CM_FILE system
 zip -r $CM_FILE data
 zip -d $CM_FILE /system/app/ADWLauncher.apk
+zip -d $CM_FILE /system/app/CMStats.apk
 
-cd $TMP_DIR
-unzip $CM_FILE META-INF/com/google/android/updater-script
-$cur_dir/updater-script.sh >> META-INF/com/google/android/updater-script
-zip -r $CM_FILE META-INF/com/google/android/updater-script
+#cd $TMP_DIR
+#unzip $CM_FILE META-INF/com/google/android/updater-script
+#$cur_dir/updater-script.sh >> META-INF/com/google/android/updater-script
+#zip -r $CM_FILE META-INF/com/google/android/updater-script
 
