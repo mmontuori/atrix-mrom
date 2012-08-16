@@ -14,6 +14,10 @@ if [ "$1" == "sync" ]; then
 	exit
 fi
 
+cd $REPO_HOME
+
+cp doc/Atrix-MROM-Changelog.txt ${CM_DIR}/vendor/cyanogen/CHANGELOG.mkdn
+
 cd $REPO_HOME/cm_system
 
 files=`find * -type f`

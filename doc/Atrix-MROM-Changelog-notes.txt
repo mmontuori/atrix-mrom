@@ -1,0 +1,232 @@
+Atrix-MROM Changelog Alpha 1
+- 8/9/2012: Recompiled CyanogenMod 7.2
+- 8/10/2012: Recompiled CyanogenMod Atrix Kernel faux123, removed all debug attributes
+- 8/10/2012: Recompiled proprietary wi-fi Atrix 4G kernel module
+- 8/11/2012: Switch /mnt/sdcard and /mnt/emmc
+- 8/11/2012: SymLink /mnt/sdcard-ext /mnt/emmc for correct Atrix Operations
+- 8/12/2012: Recompiled kernel from atrix-dev-team source code
+- 8/12/2012: Recompiled WI-FI module dhd.ko from source code
+- 8/12/2012: Included Google Base Framework
+- 8/13/2012: Removed automatic error reporting
+- 8/13/2012: Changed boot animation
+- 8/13/2012: Install non market apps enabled by default
+- 8/14/2012: Replaced ADWLauncher with HaloLauncher
+- 8/14/2012: Updated Superuser application
+- 8/14/2012: Added MIUI Camera
+- 8/14/2012: Set Dalvik Heap Size to 96m, optimum for Atrix
+- 8/14/2012: Added QuickPic Gallery App
+- 8/15/2012: Increased WiFi scan to 150 seconds
+- 8/15/2012: Added most common Atrix 4G tweaks, GPU, Deep Sleep, Stream, etc.
+
+
+NEUTRINO
+- Wi-Fi/3G tweaks
+Tweaked net buffer size and added network init.d scripts for faster 3g/Wi-Fi.
+- Android 4.0 ICS Fuju Tweaks
+Results in ICS smoothness and responsiveness.
+- Touch response Tweaks
+Better sensitivity, greater precision when typing and overall smoother scrolling and performance.
+- SD Card tweaks
+Increases read/write speeds on microSD card.
+- Battery Tweaks
+Adjusted and added build.prop and init.d lines to increase battery efficiency.
+- Enabled Stagefreight
+Faster video streaming.
+- V6 Supercharged
+Tweak's OOM's, minfrees to improve RAM efficiency and make everything smoother.
+- FULL GPU rendering
+Uses ONLY GPU to FULLY render the UI, making everything much more smooth and fluid.
+- Ext4 w/o journaling
+Removes the journal from Ext4 which heavily increases I/O speeds and makes everything faster.
+- Kernel and Networking tweaks
+Improves kernel efficiency as well as faster Wi-Fi and data. Also contributes to much better overall efficiency and smoothness
+- qHD Keyboard
+Nice and large WP7 themed keyboard, made to fit qHD resolution.
+- I/O tweaks
+Improves database efficiency, and makes everything fell fast and smooth.
+
+Vanilla GB
+- The ROM is SuperCharged.
+- Its Rooted and has Busybox installed.
+- Fully DeOdexed and zipaligned
+- No changes made to the theme so no more disappearing status bar.
+- 1080p video recording and 5 finger multi touch.
+- Raindrop Fix
+- Beats Audio + XLound
+- Bravia HD Mobile
+- Jug6 Battery FIX
+- Improved AGPS
+- Adblocker
+- faux123's 1 ghz enhanced stock kernel so anyone from anywhere can install and use this.
+- Using the CM7 APN list.
+
+Pinguy
+The ROM is SuperCharged.
+Its Rooted and has Busybox installed.
+Fully DeOdexed and zipaligned
+1080p video recording and 5 finger multi touch.
+Droid 3 Camera is default camera
+Raindrop Fix
+Beats Audio + XLound
+Bravia HD Mobile
+Jug6 Battery FIX + tweaks I have made. Gives the best battery performance of any Blur ROM.
+Improved AGPS
+Adblocker
+faux123's 1 ghz enhanced stock kernel so anyone from anywhere can install and use this.
+LS HDMI
+WebTop over HDMI
+HDMI Mirroring
+Toggles in notification bar
+Theme Dark Blur by Flacco fixed
+Eliminated Free apks and Google Apps (can be installed from google play)
+Boot acceleration
+Data Base optimized
+Bugs fixed
+
+
+Alien
+-Rooted
+-Deodexed
+-Busybox'd
+-SQLite3
+-PNG Optimized
+-Zipaligned (system and data apps)
+-Sideloading default
+-HSPA/3G icons are different (reports with accuracy)
+-SIP not WiFi only
+-Tethering
+-Some bloat removed
+-Stock email app
+-Skip blur setup option
+-1080p Droid 3 camera
+-WidgetPicker
+-Battery fix
+-Network select menu open
+-APN menu opened
+-Menu button lockscreen bypass (when unsecured)
+-Touchscreen MOD (5 fingers)
+-Google Talk over 3G
+-AGPS option
+-Entitlement check disabled
+-Dock Settings
+-HDMI Settings
+-Full IMEI Settings
+-Modded stock Android Launcher for speed and Blur widget compatibility
+-Inverted applications and Settings
+-FuguTweaks
+-Juwe11 optimizations (modded for Atrix)
+-Superuser Beta
+- Webtop HDMI hack
+- Proximity sensor hack on build.prop
+- GPU hack on build.prop
+- WiFi battery saving hack on build.prop
+- Google Android 2.3.5 application framework
+- Videos for root app
+
+NottachTrix4G
+-2.3.6 (AT&T 4.5.141)
+-DeOdexed
+-Rooted
+-BusyBoxed
+-ZipAligned
+-Unified Installer (Aroma Installer by amarullz)
+-EXT3 or EXT4
+-All Kernels Included
+-1% Batt
+-Removed Carrier
+-VM Heap = 192m
+-Quick Panel (Scrolling)
+-EDT (Clock Appearance and Color)
+-Battery Bar (TEAM Battery Bar)
+-etc/moto tweaks
+-LS HDMI (4.5.141 System)
+-WebTop over HDMI
+-Entitlement Check Disabled
+-ICS Fonts
+-ICS Animations
+-Reduced AutoBrightness (Screen & Buttons)
+-Custom Boot Animation (Under 1MB)
+-Reboot, Reboot to Recovery & Sleep
+-More Languages (Might need a Hebrew Font)
+-Voice Command Support
+--Deutsch
+--Espanol (Espana)
+--English (UK)
+--Francais
+--Italiano
+--Portugues
+-Bravia Hack
+-StageFright Tweaks
+-External Keyboard Settings
+-Droid3 Camera Combos
+-QuickPic Gallery Combos
+-0kb Camera Sounds
+-Ad Blocking (hosts)
+-Updated Time Zones
+-Screen On on UnPlug
+-SIP WiFi Only = false
+-Skip Slider if PIN, Pattern, or Password Set
+-Added Motorola_Bluetooth_Wireless_Keyboard.kl
+-Added Motorola_Bluetooth_Wireless_Keyboard.kcm.bin
+-External Keyboard Settings
+-Removed Vlingo
+-Browser Defualt HomePage (Google)
+-Custom No Notifications String
+-Mirror Resolution App (djeman) 
+-Added dun to TIM 72403 APN
+-Airplane Mode Does Not Affect WiFi
+-Arabic Text Fix
+-aGPS to Stock
+-Smoother Scroll (AndroidON) 
+-Media Volume Steps to 30 (May cause issues in PowerAMP) (AndroidON) 
+-Raindrop Fix (Notorious544d)
+
+Topogigi
+- Based on 45.31.00.MB860.Retail.en.IT (Unbranded 2.3.4 GB ITA Retail rom)
+- Multilanguage (14 languages available)
+- Faux123's OC kernel rel. 024 (1.3Ghz flavour in 1.0, 1.0Ghz flavour in 1.1)
+- Stock Kernel recompiled by me (1.2)
+- EXT4 filesystem for /system, /data and /cache partitions
+- /system/etc/init.d support
+- CIFS
+- TUN
+- Deadline scheduler
+- Supercharged via build.prop and init.rc (Supercharger is named "v6sc.sh" in /system/xbin)
+- Zipalign all apps at boot time
+- OC up to 1300 Mhz (via SETCPU, Antutu CPU Master or Pimp my CPU in 1.0 release with 1.3Ghz kernel)
+- UV (via Pimp my CPU or others) - only 1.0 & 1.1 releases
+- Motorola Blur Launcher (TW4Launcher in 1.1 and 1.2 releases)
+- Stock framework with some light mods by me
+- Circular Battery Mod with 1% steps
+- Sqlite3
+- Battery Driver Fix
+- Deodexed
+- Rooted
+- Busybox 1.19.0
+- Extended Power Off Menu with Sleep and Reboot options
+- QuickPanel Settings Menu
+- Stock camera with 1080p video recording enabled
+- Tegra Boot Logo
+
+Morrisoftgen
+- Based on nightly May 27th 2012
+- HDMI LS Mirroring
+- Fingerprint icon on Lockscreen CM7 removed
+- Camera enhancements from euplio
+- Launcher Pro as default launcher
+- blocked ads
+- Boots from cold about 40 Seconds
+- Blank bootanimation for performance boot
+- 128MB Heap
+- Right aligned clock
+- H+ icon replaced to 4G
+- CM7/GB wifi, signal, 4G icons
+- CM7 LatinIME.apk for qHD
+- Bigger battery % text (compensating for the pentile screen we have)
+- Google Talk Video Chat (in GAPPS)
+- Some ringtons and notifications stuff
+- Neutrino network tweaks
+- Flash video fix on start up (finds all flash plugins and fix them)
+- 30 Media volume steps
+- Bravia Engine
+- Raindrop fix
