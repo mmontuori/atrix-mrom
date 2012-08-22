@@ -3,9 +3,12 @@
 
 source kernelenv
 
-#cd ~/android/kernel/atrix-kernel
+cd ~/android/kernel/kernel-MB860.faux123
 
-#make mrproper
-#make oldconfig
-#make zImage
-#make modules
+if [ "$1" == "clean" ]; then
+	make clean
+fi
+
+make oldconfig
+make zImage
+make modules

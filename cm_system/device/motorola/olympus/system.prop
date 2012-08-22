@@ -2,7 +2,6 @@
 # system.prop for olympus
 #
 ro.sf.lcd_density=240
-dalvik.vm.heapsize=96m
 
 #RIL
 ro.telephony.ril_class=mototegra
@@ -10,7 +9,7 @@ rild.libpath=/system/lib/libmoto_ril.so
 persist.ril.mux.noofchannels=9
 persist.ril.mux.ttydevice=/dev/ttyHS3
 ro.telephony.call_ring.multiple=false
-ro.telephony.call_ring.delay=500
+ro.telephony.call_ring.delay=0
 persist.ril.modem.ttydevice=/dev/ttySPI0
 persist.ril.modem.mode=2
 persist.ril.features=0x24
@@ -20,15 +19,6 @@ ro.kernel.android.ril=yes
 persist.ril.pppd.start.fail.max=16
 mobiledata.interfaces=ppp0
 ro.ril.ntmodeglobal=true
-
-#Define TCP buffer sizes for various networks
-#ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
-net.tcp.buffersize.default=131072,262144,524288,4096,16384,147456
-net.tcp.buffersize.wifi=131072,262144,524288,4096,16384,147456
-net.tcp.buffersize.hspa=131072,262144,524288,4096,16384,147456
-net.tcp.buffersize.umts=131072,262144,524288,4096,16384,147456
-net.tcp.buffersize.edge=16384,32768,65536,4096,16384,32768
-net.tcp.buffersize.gprs=4096,8192,12288,4096,8192,12288
 
 # Default network type.
 # 0 -> WCDMA preferred
@@ -66,7 +56,7 @@ ro.battery_light=true
 ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Tegra debugging
-persist.tegra.nvlog.level=4
+#persist.tegra.nvlog.level=4
 #persist.tegra.nvlog.14.level=5
 
 # DRM
@@ -83,3 +73,86 @@ dalvik.vm.dexopt-flags=m=y,u=n
 # Fingerprint
 ro.authentec.fingerprint.jar=/system/framework/am2app.jar
 ro.authentec.fingerprint.so=/system/lib/libam2app.so
+
+# Atrix-MROM Added Properties
+#
+# Power Save tweaks
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+
+# Ringing Will Start Immediately
+ro.telephony.call_ring.delay=0
+
+# Increase Performance
+debug.performance.tuning=1
+
+# Video Acceleration Enabled
+video.accelerate.hw=1
+
+# Increasing The Video Recording Quality
+ro.media.enc.hprof.vid.bps=8000000
+
+# Signal Tweaks
+ro.ril.hep=1
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=10
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.hsupa.category=5
+ro.ril.hsxpa=3 
+ro.ril.gprsclass=12  
+
+# NetSpeed Tweaks
+#Define TCP buffer sizes for various networks
+#ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
+net.tcp.buffersize.default=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.wifi=262144,524288,1048576,262144,524288,1048576
+net.tcp.buffersize.lte=262144,524288,1048576,262144,524288,1048576
+net.tcp.buffersize.hsdpa=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.evdo_b=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.umts=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.hspa=6144,87380,262144,6144,16384,262144
+net.tcp.buffersize.gprs=6144,8760,11680,6144,8760,11680
+net.tcp.buffersize.edge=6144,26280,35040,6144,16384,35040
+
+# Google DNS Tweak
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+
+# Photo And Video Quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.jpeg.quality=100
+
+# Scrolling Responsiveness
+#windowsmgr.max_events_per_sec=500
+windowsmgr.max_events_per_sec=150
+#ro.max.fling_velocity=12000 
+#ro.min.fling_velocity=8000
+
+# Frees up more ram when needed
+#persist.sys.purgeable_assets=1
+
+# Disable Sending Usage Data
+ro.config.nocheckin=1
+
+# Increase VM Heap Size
+dalvik.vm.heapsize=96m
+
+# Debug SurfaceFlinger Hardware
+debug.sf.hw=1
+
+# Disable kernel jni check
+ro.kernel.android.checkjni=0
+
+# Improve Performance in video playback and streaming
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=true

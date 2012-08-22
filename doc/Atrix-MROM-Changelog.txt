@@ -22,4 +22,6 @@ Based on CyanogenMOD 7.2 +
 - 8/15/2012: Added most common Atrix 4G tweaks, GPU, Deep Sleep, Stream, etc.
 - 8/17/2012: Removed Google Apps to comply with Google Policy
 - 8/17/2012: Updated MIUI Camera
+- 8/20/2012: Updated build.prop network buffer properties, and other minor tweks
+- 8/20/2012: Updated build.prop WiFi scan interval to 30 secs
 
