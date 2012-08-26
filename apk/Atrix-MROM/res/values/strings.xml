@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Atrix-MROM</string>
+    <string name="checkin_service_name">CheckIn</string>
+</resources>
