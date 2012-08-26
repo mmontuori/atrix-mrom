@@ -20,6 +20,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdio.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -115,7 +116,19 @@ Volume::Volume(VolumeManager *vm, const char *label, const char *mount_point) {
     mCurrentlyMountedKdev = -1;
     mPartIdx = -1;
 
-    property_get("persist.sys.vold.switchexternal", switchable, "1");
+    FILE * file;
+    if (file = fopen("/data/property/persist.sys.vold.switchexternal", "r"))
+    {
+        fclose(file);
+    } else {
+        file = fopen("/data/property/persist.sys.vold.switchexternal", "w+");
+	if ( file != NULL ) {
+        	fprintf(file,"%s","1");
+        	fclose(file);
+	}
+    }
+
+    property_get("/data/property/persist.sys.vold.switchexternal", switchable, "1");
     if (!strcmp(switchable,"1")) {
         char *first, *second = NULL;
         const char *delim = ",";

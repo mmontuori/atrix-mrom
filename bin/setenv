@@ -18,8 +18,8 @@ export CM_BUILDTYPE=UNOFFICIAL
 export KERNEL_TYPE=kernel-moto-atrix4g
 
 if ! ps -ef | grep adb | grep -v grep>/dev/null; then
-	sudo $HOME/android/android-sdk-linux/platform-tools/adb kill-server
-	sudo $HOME/android/android-sdk-linux/platform-tools/adb start-server
+	$HOME/android/android-sdk-linux/platform-tools/adb kill-server
+	$HOME/android/android-sdk-linux/platform-tools/adb start-server
 fi
 
 function init_repo {

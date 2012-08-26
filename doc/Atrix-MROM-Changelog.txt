@@ -25,3 +25,6 @@ Based on CyanogenMOD 7.2 +
 - 8/20/2012: Updated build.prop network buffer properties, and other minor tweaks
 - 8/20/2012: Updated build.prop WiFi scan interval to 30 secs
 - 8/20/2012: Removed additional Debug flags and unreference library pointers from kernel
+- 8/24/2012: Fixed CMParts to report correct "Use Internal Storage" checkbox
+- 8/26/2012: CHanged AudioManager to have 30 volume steps instead of 15
+
