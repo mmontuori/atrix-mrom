@@ -27,6 +27,8 @@ Based on CyanogenMOD 7.2 +
 - 8/20/2012: Removed additional Debug flags and unreference library pointers from kernel
 - 8/24/2012: Fixed CMParts to report correct "Use Internal Storage" checkbox
 - 8/26/2012: Changed AudioManager to have 30 volume steps instead of 15
-- 8/27/2012: Sync with CyanogenMOD latest source code
 - 8/27/2012: Increaded NUMTOUCH from 5 to 10
+- 8/28/2012: Sync with CyanogenMOD latest source code
 - 8/28/2012: Increased sdcard read_ahead buffer
+- 8/28/2012: Created the add-on hacks package. Now contains Bravia, xLoud, and Beats
+- 8/28/2012: Updated HoloLauncher to the latest version

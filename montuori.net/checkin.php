@@ -22,5 +22,16 @@
   	{
   		die('Error: ' . mysql_error());
   	}
+
+	$sql="SELECT * FROM mrom_conf";
+	$rows = array();
+	if (!mysql_query($sql,$con))
+        {
+                die('Error: ' . mysql_error());
+        }
+	while($r = mysql_fetch_assoc($sth)) {
+	    $rows[] = $r;
+	}
 	mysql_close($conn);
+	print json_encode($rows);
 ?>
