@@ -54,7 +54,7 @@ diffs=`diff -r --brief $first $second | grep -v "META-INF" | awk '{ print $4 }' 
 echo "diffs: $diffs"
 
 cd $second
-tar cvf ../update.tar $diffs Only system/app/Atrix-MROM.apk system/etc/init.d/07sdcard
+tar cvf ../update.tar $diffs Only system/app/Atrix-MROM.apk system/etc/init.d/90mrom
 
 tar uvf ../update.tar META-INF
 gzip ../update.tar

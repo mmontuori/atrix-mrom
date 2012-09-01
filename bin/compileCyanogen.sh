@@ -35,12 +35,12 @@ for file in $files; do
 	fi
 done
 
-if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "07sdcard"; then
+if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "90mrom"; then
 	echo "Updating $CM_DIR/vendor/cyanogen/products/common.mk..."
 	echo "" >> $CM_DIR/vendor/cyanogen/products/common.mk
-	echo "# mmontuori sdcard speed" >> $CM_DIR/vendor/cyanogen/products/common.mk
+	echo "# mmontuori mrom speed" >> $CM_DIR/vendor/cyanogen/products/common.mk
 	echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/vendor/cyanogen/products/common.mk
-    	echo "vendor/cyanogen/prebuilt/common/etc/init.d/07sdcard:system/etc/init.d/07sdcard" >> $CM_DIR/vendor/cyanogen/products/common.mk
+    	echo "vendor/cyanogen/prebuilt/common/etc/init.d/90mrom:system/etc/init.d/90mrom" >> $CM_DIR/vendor/cyanogen/products/common.mk
 	echo "# end of mmontuori change" >> $CM_DIR/vendor/cyanogen/products/common.mk
 fi
 

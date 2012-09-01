@@ -6,4 +6,5 @@ export CROSS_COMPILE=arm-linux-gnueabi-
 
 export ANDROID_BUILD_TOP=/home/michael/android/system
 export LINUXSRCDIR=/home/michael/android/kernel/kernel-MB860.faux123
+#export LINUXSRCDIR=/home/michael/android/kernel/kernel/tegra
 

@@ -32,3 +32,5 @@ Based on CyanogenMOD 7.2 +
 - 8/28/2012: Increased sdcard read_ahead buffer
 - 8/28/2012: Created the add-on hacks package. Now contains Bravia, xLoud, and Beats
 - 8/28/2012: Updated HoloLauncher to the latest version
+- 8/30/2012: Compiled Kernel with different frequencies, voltage, and settings
+- 8/31/2012: GingerBlurB is now the default theme
