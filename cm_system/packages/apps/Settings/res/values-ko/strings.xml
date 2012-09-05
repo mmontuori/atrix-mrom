@@ -1255,7 +1255,7 @@
     <!-- Widget Picker -->
     <string name="widget_count">(%d개의 위젯)</string>
 
-    <string name="cm_settings_title">Atrix-MROM 설정</string>
+    <string name="cm_settings_title">MROM 설정</string>
     <string name="adb_notify">USB 디버깅 알림</string>
     <string name="adb_notify_summary">USB 디버깅이 연결되었을 때 알림을 표시합니다.</string>
     <!-- About phone screen, status item label -->

@@ -1182,7 +1182,7 @@
     <string name="mod_version">"Modバージョン"</string>
     <string name="mod_version_default">"不明"</string>
     <string name="build_date">ビルド日付</string>
-    <string name="cm_settings_title">Atrix-MROM設定</string>
+    <string name="cm_settings_title">MROM設定</string>
     <string name="cpu_info">CPU情報</string>
     <string name="mem_info">メモリ情報(空き/トータル)</string>
     <string name="kill_app_longpress_back">"長押しでアプリを終了"</string>
@@ -1373,7 +1373,7 @@
     <string name="profile_statusbar">ステータスバーインジケータ</string>
 
     <!-- About phone settings, CM Legal information setting option name and title of dialog box holding license info -->
-    <string name="settings_cmlicense_activity_title">Atrix-MROM ライセンス</string>
+    <string name="settings_cmlicense_activity_title">MROM ライセンス</string>
 
 
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"その他のシステムアップデート"</string>

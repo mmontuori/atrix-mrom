@@ -689,7 +689,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Лицензии открытого ПО"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"При загрузке лицензий возникла неполадка."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Идет загрузка…"</string>
-    <string name="settings_cmlicense_activity_title">Лицензии Atrix-MROM</string>
+    <string name="settings_cmlicense_activity_title">Лицензии MROM</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Телефон не подключен к службе передачи данных. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере, подключенном к Интернету."</string>
@@ -1191,7 +1191,7 @@
 	
     <string name="cpu_info">Информация о ЦП</string>
     <string name="mem_info">Память (доступно/всего)</string>
-    <string name="mod_version">Версия Atrix-MROM</string>
+    <string name="mod_version">Версия MROM</string>
     <string name="mod_version_default">Неизвестно</string>
     <string name="build_date">Дата сборки</string>
 
@@ -1272,7 +1272,7 @@
     <string name="ok">ОК</string>
     <string name="widget_count">виджетов: %d</string>
 
-    <string name="cm_settings_title">Настройки Atrix-MROM</string>
+    <string name="cm_settings_title">Настройки MROM</string>
     <string name="device_settings_title">Настройки устройства</string>
 
     <!-- Setting checkbox title for displaying USB debugging notification -->

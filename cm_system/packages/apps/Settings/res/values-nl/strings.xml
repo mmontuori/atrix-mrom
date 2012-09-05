@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2007 The Android Open Source Project
-      Copyright (C) 2012 The Atrix-MROM Project
+      Copyright (C) 2012 The MROM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -687,7 +687,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Open-sourcelicenties"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"Er is een probleem bij het laden van de licenties."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Laden\u2026"</string>
-    <string name="settings_cmlicense_activity_title">Atrix-MROM-licentie</string>
+    <string name="settings_cmlicense_activity_title">MROM-licentie</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Veiligheidsinformatie"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Veiligheidsinformatie"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Uw telefoon heeft geen verbinding met een gegevensservice. Als u deze informatie nu wilt bekijken, gaat u op een computer met internetverbinding naar %s."</string>
@@ -1336,7 +1336,7 @@
     <string name="notConfigured">Niet geconfigureerd. Gelieve opnieuw toe te voegen.</string>
     <string name="ok">OK</string>
     <string name="widget_count">(%d widgets)</string>
-    <string name="cm_settings_title">Atrix-MROM</string>
+    <string name="cm_settings_title">MROM</string>
     <string name="device_settings_title">Apparaatinstellingen</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G-instellingen"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"4G-netwerk en -modem instellen en beheren"</string>

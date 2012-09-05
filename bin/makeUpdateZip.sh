@@ -104,5 +104,9 @@ if test -f boot.img; then
 	echo 'package_extract_file("boot.img", "/dev/block/mmcblk0p11");' >> META-INF/com/google/android/updater-script
 fi
 echo 'unmount("/system");' >> META-INF/com/google/android/updater-script
+echo 'ui_print("wiping dalvik-cache ...");' >> META-INF/com/google/android/updater-script
+echo 'mount("ext4", "EMMC", "/dev/block/mmcblk0p16", "/data");' >> META-INF/com/google/android/updater-script
+echo 'delete_recursive("/data/dalvik-cache");' >> META-INF/com/google/android/updater-script
+echo 'unmount("/data");' >> META-INF/com/google/android/updater-script
 
 zip -r $curdir/update.zip *

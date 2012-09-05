@@ -1347,7 +1347,7 @@
   <string name="notConfigured">לא הוגדר. נא הגדר שוב</string>
   <string name="ok">אישור</string>
   <string name="widget_count">(%d widgets)</string>
-  <string name="cm_settings_title">הגדרות Atrix-MROM</string>
+  <string name="cm_settings_title">הגדרות MROM</string>
     <string name="wimax_settings" msgid="1574837328738396794">"הגדרות ‎4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"הגדר ונהל רשת ומודם של ‎4G"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"כתובת ‎4G MAC"</string>

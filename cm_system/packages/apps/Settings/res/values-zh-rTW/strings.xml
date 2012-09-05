@@ -1643,7 +1643,7 @@
     <!-- About phone settings screen, Open source license dialog title until license is fully loaded -->
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"載入中..."</string>
     <!-- About phone settings, CM Legal information setting option name and title of dialog box holding license info -->
-    <string name="settings_cmlicense_activity_title">Atrix-MROM 授權</string>
+    <string name="settings_cmlicense_activity_title">MROM 授權</string>
 
     <!-- About phone settings, Safety Legal information setting option name and title of dialog box holding safety legal info -->
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"安全資訊"</string>
@@ -2984,7 +2984,7 @@
     <!-- Widget Picker -->
     <string name="widget_count">（%d 個小工具）</string>
 
-    <string name="cm_settings_title">Atrix-MROM 設定</string>
+    <string name="cm_settings_title">MROM 設定</string>
     <string name="device_settings_title">裝置設定</string>
 
     <string name="wimax_settings" msgid="1574837328738396794">"4G 設定"</string>

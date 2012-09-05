@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (C) 2007, The Android Open Source Project
-     Copyright (C) 2012, The Atrix-MROM Project
+     Copyright (C) 2012, The MROM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -708,7 +708,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Açık kaynak lisansları"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"Lisanslar yüklenirken bir sorun oluştu."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Yükleniyor…"</string>
-    <string name="settings_cmlicense_activity_title">Atrix-MROM lisansları</string>
+    <string name="settings_cmlicense_activity_title">MROM lisansları</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Güvenlik bilgileri"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Güvenlik bilgileri"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Telefonunuz bir veri hizmetine bağlı değil. Bu bilgiyi şimdi görüntülemek için İnternet\'e bağlı herhangi bir bilgisayardan %s adresine gidin."</string>
@@ -1389,7 +1389,7 @@
     <string name="notConfigured">Yapılandırılmamış. Lütfen tekrar ekleyin</string>
     <string name="ok">Tamam</string>
     <string name="widget_count">(%d widget)</string>
-    <string name="cm_settings_title">Atrix-MROM ayarları</string>
+    <string name="cm_settings_title">MROM ayarları</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G ayarları"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"4G ağı ve modemi kurma ve yönetme"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G MAC adresi"</string>

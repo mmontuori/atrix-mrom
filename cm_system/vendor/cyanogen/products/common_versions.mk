@@ -37,4 +37,4 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=Atrix-MROM-$(CMVERSION)
+    ro.modversion=MROM-$(CMVERSION)

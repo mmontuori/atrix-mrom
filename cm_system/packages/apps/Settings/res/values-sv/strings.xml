@@ -700,7 +700,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Öppen källkodslicens"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"Ett problem inträffade när licenserna lästes in."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Läser in…"</string>
-    <string name="settings_cmlicense_activity_title">Atrix-MROM-licenser</string>
+    <string name="settings_cmlicense_activity_title">MROM-licenser</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Säkerhetsinformation"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Säkerhetsinformation"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Din telefon är inte ansluten till en datatjänst. Besök %s på en dator som är ansluten till Internet om du vill visa informationen nu."</string>
@@ -1368,7 +1368,7 @@
     <string name="notConfigured">Inte konfigurerad. Lägg till igen</string>
     <string name="ok">Ok</string>
     <string name="widget_count">(%d widgetar)</string>
-    <string name="cm_settings_title">Atrix-MROM-inställningar</string>
+    <string name="cm_settings_title">MROM-inställningar</string>
     <string name="device_settings_title">Enhetsinställningar</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G-inställningar"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Konfigurera och hantera 4G-nätverk och modem"</string>

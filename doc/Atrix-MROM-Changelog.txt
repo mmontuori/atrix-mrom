@@ -1,36 +1,38 @@
-Atrix-MROM Changelog Alpha 1
+MROM Changelog
 
 Based on CyanogenMOD 7.2 +
 
-- 8/9/2012: Recompiled CyanogenMod 7.2
-- 8/10/2012: Recompiled CyanogenMod Atrix Kernel faux123, removed all debug attributes
-- 8/10/2012: Recompiled proprietary wi-fi Atrix 4G kernel module
-- 8/11/2012: Switch /mnt/sdcard and /mnt/emmc
-- 8/11/2012: SymLink /mnt/sdcard-ext /mnt/emmc for correct Atrix Operations
-- 8/12/2012: Recompiled kernel from atrix-dev-team source code
-- 8/12/2012: Recompiled WI-FI module dhd.ko from source code
-- 8/12/2012: Included Google Base Framework
-- 8/13/2012: Removed automatic error reporting
-- 8/13/2012: Changed boot animation
-- 8/13/2012: Install non market apps enabled by default
-- 8/14/2012: Replaced ADWLauncher with HaloLauncher
-- 8/14/2012: Updated Superuser application
-- 8/14/2012: Added MIUI Camera
-- 8/14/2012: Set Dalvik Heap Size to 96m, optimum for Atrix
-- 8/14/2012: Added QuickPic Gallery App
-- 8/15/2012: Increased WiFi scan to 150 seconds
-- 8/15/2012: Added most common Atrix 4G tweaks, GPU, Deep Sleep, Stream, etc.
-- 8/17/2012: Removed Google Apps to comply with Google Policy
-- 8/17/2012: Updated MIUI Camera
-- 8/20/2012: Updated build.prop network buffer properties, and other minor tweaks
-- 8/20/2012: Updated build.prop WiFi scan interval to 30 secs
-- 8/20/2012: Removed additional Debug flags and unreference library pointers from kernel
-- 8/24/2012: Fixed CMParts to report correct "Use Internal Storage" checkbox
-- 8/26/2012: Changed AudioManager to have 30 volume steps instead of 15
-- 8/27/2012: Increaded NUMTOUCH from 5 to 10
-- 8/28/2012: Sync with CyanogenMOD latest source code
-- 8/28/2012: Increased sdcard read_ahead buffer
-- 8/28/2012: Created the add-on hacks package. Now contains Bravia, xLoud, and Beats
-- 8/28/2012: Updated HoloLauncher to the latest version
-- 8/30/2012: Compiled Kernel with different frequencies, voltage, and settings
-- 8/31/2012: GingerBlurB is now the default theme
+- 08/09/2012: Recompiled CyanogenMod 7.2
+- 08/10/2012: Recompiled CyanogenMod Atrix Kernel faux123, removed all debug attributes
+- 08/10/2012: Recompiled proprietary wi-fi Atrix 4G kernel module
+- 08/11/2012: Switch /mnt/sdcard and /mnt/emmc
+- 08/11/2012: SymLink /mnt/sdcard-ext /mnt/emmc for correct Atrix Operations
+- 08/12/2012: Recompiled kernel from atrix-dev-team source code
+- 08/12/2012: Recompiled WI-FI module dhd.ko from source code
+- 08/12/2012: Included Google Base Framework
+- 08/13/2012: Removed automatic error reporting
+- 08/13/2012: Changed boot animation
+- 08/13/2012: Install non market apps enabled by default
+- 08/14/2012: Replaced ADWLauncher with HaloLauncher
+- 08/14/2012: Updated Superuser application
+- 08/14/2012: Added MIUI Camera
+- 08/14/2012: Set Dalvik Heap Size to 96m, optimum for Atrix
+- 08/14/2012: Added QuickPic Gallery App
+- 08/15/2012: Increased WiFi scan to 150 seconds
+- 08/15/2012: Added most common Atrix 4G tweaks, GPU, Deep Sleep, Stream, etc.
+- 08/17/2012: Removed Google Apps to comply with Google Policy
+- 08/17/2012: Updated MIUI Camera
+- 08/20/2012: Updated build.prop network buffer properties, and other minor tweaks
+- 08/20/2012: Updated build.prop WiFi scan interval to 30 secs
+- 08/20/2012: Removed additional Debug flags and unreference library pointers from kernel
+- 08/24/2012: Fixed CMParts to report correct "Use Internal Storage" checkbox
+- 08/26/2012: Changed AudioManager to have 30 volume steps instead of 15
+- 08/27/2012: Increaded NUMTOUCH from 5 to 10
+- 08/28/2012: Sync with CyanogenMOD latest source code
+- 08/28/2012: Increased sdcard read_ahead buffer
+- 08/28/2012: Created the add-on hacks package. Now contains Bravia, xLoud, and Beats
+- 08/28/2012: Updated HoloLauncher to the latest version
+- 08/30/2012: Compiled Kernel with different frequencies, voltage, and settings
+- 08/31/2012: GingerBlurB is now the default theme
+- 09/03/2012: Additional teaks for kernel governor, frequensies, and voltage
+- 09/04/2012: New MROM version update notification MROM.apk

@@ -1375,7 +1375,7 @@
     <string name="notConfigured">Nincs beállítva. Kérem próbálja újra</string>
     <string name="ok">OK</string>
     <string name="widget_count">(%d widgetek)</string>
-    <string name="cm_settings_title">Atrix-MROM beállítások</string>
+    <string name="cm_settings_title">MROM beállítások</string>
     <string name="device_settings_title">Készülék beállítások</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G beállítások"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"4G hálózat és modem beállítása és kezelése"</string>

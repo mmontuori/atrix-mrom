@@ -14,6 +14,25 @@ if [ "$1" == "sync" ]; then
 	exit
 fi
 
+if [ "$1" == "getfiles" ] && [ "$2" == "" ]; then
+	echo "usage: compileCyanogen.sh getfiles {device}"
+	exit
+fi
+
+if [ "$1" == "getfiles" ] && [ "$2" == "" ]; then
+	cd $CM_DIR
+	cd device/htc/$2/
+	./extract-files.sh 
+	exit
+fi
+
+
+if [ "$1" != "" ]; then
+	device=$1
+else
+	device=olympus
+fi
+
 cd $REPO_HOME
 
 cp doc/Atrix-MROM-Changelog.txt ${CM_DIR}/vendor/cyanogen/CHANGELOG.mkdn
@@ -63,5 +82,5 @@ cd $CM_DIR
 
 . build/envsetup.sh
 
-brunch olympus
+brunch $device
 

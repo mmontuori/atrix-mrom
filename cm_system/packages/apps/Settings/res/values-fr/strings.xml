@@ -1394,7 +1394,7 @@
     <!-- Widget Picker -->
     <string name="widget_count">(%d widgets)</string>
 
-    <string name="cm_settings_title">Atrix-MROM</string>
+    <string name="cm_settings_title">MROM</string>
     <string name="device_settings_title">Réglages de l\'appareil</string>
 
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Retour sonore"</string>

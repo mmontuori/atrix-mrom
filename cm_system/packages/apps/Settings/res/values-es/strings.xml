@@ -754,7 +754,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Licencias de código abierto"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"Se ha producido un problema al intentar cargar las licencias."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Cargando\u2026"</string>
-    <string name="settings_cmlicense_activity_title">Licencias Atrix-MROM</string>
+    <string name="settings_cmlicense_activity_title">Licencias MROM</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Información de seguridad"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Información de seguridad"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"El teléfono no está conectado a un servicio de datos. Para ver esta información, accede a %s desde cualquier equipo conectado a Internet."</string>
@@ -1477,7 +1477,7 @@
 
     <string name="widget_count">(%d widgets)</string>
 
-    <string name="cm_settings_title">Ajustes Atrix-MROM</string>
+    <string name="cm_settings_title">Ajustes MROM</string>
     <string name="device_settings_title">Ajustes del terminal</string>
 
     <string name="wimax_settings" msgid="1574837328738396794">"Ajustes de 4G"</string>

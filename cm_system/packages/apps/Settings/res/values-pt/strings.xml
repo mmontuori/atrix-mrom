@@ -1171,7 +1171,7 @@
   <string name="sound_category_calls_title" msgid="3688531959256239012">"Chamadas recebidas"</string>
   <string name="sound_category_notification_title" msgid="3502115998790286943">"Notificações"</string>
   <string name="sound_category_feedback_title" msgid="4399742321363475393">"Retorno"</string>
-  <string name="cm_settings_title">Conf. Atrix-MROM</string>
+  <string name="cm_settings_title">Conf. MROM</string>
   <string name="device_settings_title">Definições de Aparelho</string>
   <string name="battery_history_label">Histórico da bateria</string>
   <string name="device_hostname">Nome do dispositivo</string>
@@ -1360,7 +1360,7 @@
   <string name="profile_volumeoverrides_summary">Toque para definir o volume</string>
   <string name="power_sounds_enable_title">Som de nível baixo de bateria</string>
   <string name="power_sounds_enable_summary">Tocar som com o alerta de bateria baixa</string>
-  <string name="settings_cmlicense_activity_title">Licenças Atrix-MROM</string>
+  <string name="settings_cmlicense_activity_title">Licenças MROM</string>
   <string name="bluetooth_profile_network">Rede</string>
   <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Atualizações adicionais do sistema"</string>
   <string name="bluetooth_connection_notif_message">Toque para conectar a \u0022%1$s\u0022</string>

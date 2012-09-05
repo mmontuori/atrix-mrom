@@ -74,7 +74,7 @@ dalvik.vm.dexopt-flags=m=y,u=n
 ro.authentec.fingerprint.jar=/system/framework/am2app.jar
 ro.authentec.fingerprint.so=/system/lib/libam2app.so
 
-# Atrix-MROM Added Properties
+# MROM Added Properties
 #
 # Power Save tweaks
 ro.ril.disable.power.collapse=1

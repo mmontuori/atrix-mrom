@@ -68,7 +68,7 @@
                 <intent android:action="android.settings.LICENSE" />
             </PreferenceScreen>
 
-            <!-- Atrix-MROM License information -->
+            <!-- MROM License information -->
             <PreferenceScreen
                     android:key="cmlicense"
                     android:title="@string/settings_cmlicense_activity_title">
