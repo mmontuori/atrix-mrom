@@ -29,7 +29,7 @@
             android:process=":my_process" >
         </service>
 
-        <activity
+        <!-- <activity
             android:name=".TestCheckin"
             android:label="@string/title_activity_test_checkin" >
             <intent-filter>
@@ -38,6 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        -->
         
     </application>
 

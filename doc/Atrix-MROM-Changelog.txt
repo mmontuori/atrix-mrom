@@ -34,5 +34,5 @@ Based on CyanogenMOD 7.2 +
 - 08/28/2012: Updated HoloLauncher to the latest version
 - 08/30/2012: Compiled Kernel with different frequencies, voltage, and settings
 - 08/31/2012: GingerBlurB is now the default theme
-- 09/03/2012: Additional teaks for kernel governor, frequensies, and voltage
+- 09/03/2012: Additional tweaks for kernel governor, frequensies, and voltage
 - 09/04/2012: New MROM version update notification MROM.apk
