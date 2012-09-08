@@ -1,0 +1,79 @@
+#
+# system.prop for encore
+#
+wifi.interface=tiwlan0
+wifi.supplicant_scan_interval = 30
+
+ro.additionalmounts=/mnt/emmc;/mnt/usbdisk
+ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+
+rild.libpath=/system/lib/libreference-ril.so
+rild.libargs=-d /dev/ttyS0
+ro.pm.awake_on_usb=1
+ro.cwm.forbid_format=/boot
+
+# MROM Added Properties
+#
+# Power Save tweaks
+qemu.sf.lcd_density=160
+davlik.vm.heapstartsize=5m
+davlik.vm.heapgrowthlimit=32m
+persist.sys.use_dithering=0
+ro.kernel.checkjni=0
+
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+
+# Increase Performance
+debug.performance.tuning=1
+
+# Video Acceleration Enabled
+video.accelerate.hw=1
+
+# Increasing The Video Recording Quality
+ro.media.enc.hprof.vid.bps=8000000
+
+# NetSpeed Tweaks
+#Define TCP buffer sizes for various networks
+#ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
+net.tcp.buffersize.wifi=262144,524288,1048576,262144,524288,1048576
+
+# Google DNS Tweak
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+
+# Photo And Video Quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.jpeg.quality=100
+
+# Scrolling Responsiveness
+#windowsmgr.max_events_per_sec=500
+windowsmgr.max_events_per_sec=150
+#ro.max.fling_velocity=12000 
+#ro.min.fling_velocity=8000
+
+# Frees up more ram when needed
+#persist.sys.purgeable_assets=1
+
+# Disable Sending Usage Data
+ro.config.nocheckin=1
+
+# Increase VM Heap Size
+dalvik.vm.heapsize=96m
+
+# Debug SurfaceFlinger Hardware
+debug.sf.hw=1
+
+# Disable kernel jni check
+ro.kernel.android.checkjni=0
+
+# Improve Performance in video playback and streaming
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=true
