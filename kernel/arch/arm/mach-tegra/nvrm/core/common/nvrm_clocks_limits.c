@@ -158,13 +158,22 @@ NvRmScaledClkLimits FakepScaledCpuLimits = {
 
 // mmontuori
 NvU32 FakeShmooVoltages[] = {
-    550,
-    600,
-    650,
+//# cat frequency_voltage_table
+//1000000 1000 1000
+//912000 950 950
+//750000 900 900
+//608000 850 850
+//456000 800 800
+//312000 775 775
+//216000 750 750
+
     700,
+    725,
     750,
     800,
+    825,
     850,
+    900,
 };
 
 /*NvRmScaledClkLimits FakepScaledCpuLimits = {
@@ -189,7 +198,7 @@ NvRmScaledClkLimits FakepScaledCpuLimits = {
     32, // FakepScaledCpuLimits.MinKHz
     // Clock table
     {
-        200000,
+	216000,
         300000,
         420000,
         580000,
@@ -198,7 +207,6 @@ NvRmScaledClkLimits FakepScaledCpuLimits = {
         1000000,
     }
 };
-
 
 #endif // CONFIG_STOCK_VOLTAGE
 #endif // CONFIG_FAKE_SHMOO

@@ -67,7 +67,8 @@ extern atomic_t hotplug_policy;
    frequencies must be ascending*/
 #ifdef CONFIG_STOCK_VOLTAGE
 //mmontuori
-/*static struct cpufreq_frequency_table freq_table_1000[] = {
+/*
+static struct cpufreq_frequency_table freq_table_1000[] = {
 	{ 0, 216000 },
 	{ 1, 312000 },
 	{ 2, 456000 },
@@ -76,17 +77,18 @@ extern atomic_t hotplug_policy;
 	{ 5, 912000 },
 	{ 6, 1000000 },
 	{ 7, CPUFREQ_TABLE_END },
-};*/
+};
+*/
 
 static struct cpufreq_frequency_table freq_table_1000[] = {
-	{ 0, 200000 },
-	{ 1, 300000 },
-	{ 2, 420000 },
-	{ 3, 580000 },
-	{ 4, 700000 },
-	{ 5, 850000 },
-	{ 6, 1000000 },
-	{ 7, CPUFREQ_TABLE_END },
+	{ 0, 216000 },
+        { 1, 300000 },
+        { 2, 420000 },
+        { 3, 580000 },
+        { 4, 700000 },
+        { 5, 850000 },
+        { 6, 1000000 },
+        { 7, CPUFREQ_TABLE_END },
 };
 
 
