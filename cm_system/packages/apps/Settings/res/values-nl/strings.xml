@@ -1404,4 +1404,17 @@
     <string name="vpn_openvpn_set_tls_auth_key">Locatie TLS-Auth-sleutelbestand</string>
     <string name="vpn_openvpn_set_tls_auth_key_direction">Richting TLS-Auth-sleutel</string>
     <string name="lockfinger_dbadmin_title">True Suite-beheer</string>
-    <string name="lockfinger_semaphore_failure_toast">Semafoorfout</string></resources>
+    <string name="lockfinger_semaphore_failure_toast">Semafoorfout</string>
+    <string name="increasing_ring_title">Volume-oplopende beltoon</string>
+    <string name="checkbox_increasing_ring">Inschakelen</string>
+    <string name="increasing_ring_min_volume_title">Beginvolume</string>
+    <string name="increasing_ring_volume_notice">Let op:\nAangezien het beginvolume hoger is ingesteld dan het beltoonvolume, zal de beltoon worden afgespeeld met het beltoonvolume.</string>
+    <string name="increasing_ring_interval_title">Interval vergroten</string>
+    <string name="increasing_ring_interval_eachring">Op elke ring</string>
+    <string name="increasing_ring_interval_half_second">0,5 seconde</string>
+    <string name="increasing_ring_interval_1second">1 seconde</string>
+    <string name="increasing_ring_interval_2seconds">2 seconden</string>
+    <string name="increasing_ring_interval_3seconds">3 seconden</string>
+    <string name="increasing_ring_interval_5seconds">5 seconden</string>
+    <string name="increasing_ring_interval_10seconds">10 seconden</string>
+</resources>

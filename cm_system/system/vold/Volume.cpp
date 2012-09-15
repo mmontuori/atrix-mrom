@@ -128,7 +128,7 @@ Volume::Volume(VolumeManager *vm, const char *label, const char *mount_point) {
 	}
     }
 
-    property_get("/data/property/persist.sys.vold.switchexternal", switchable, "1");
+    property_get("persist.sys.vold.switchexternal", switchable, "1");
     if (!strcmp(switchable,"1")) {
         char *first, *second = NULL;
         const char *delim = ",";

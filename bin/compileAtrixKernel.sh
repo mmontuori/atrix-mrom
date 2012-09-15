@@ -16,3 +16,5 @@ make modules
 
 cp arch/arm/boot/zImage ~/git_repos/atrix-mrom/cm_system/device/motorola/olympus/kernel
 cp arch/arm/mach-tegra/*.ko ~/git_repos/atrix-mrom/cm_system/device/motorola/olympus/modules
+cp drivers/scsi/scsi_wait_scan.ko ~/git_repos/atrix-mrom/cm_system/device/motorola/olympus/modules
+cp drivers/misc/vpndriver/vpnclient.ko ~/git_repos/atrix-mrom/cm_system/device/motorola/olympus/modules
