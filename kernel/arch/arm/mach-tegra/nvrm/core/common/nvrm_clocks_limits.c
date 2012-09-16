@@ -146,7 +146,7 @@ NvRmScaledClkLimits FakepScaledCpuLimits = {
 #else	// STOCK_VOLTAGE_VALUES
 #define MAX_CPU_OC_FREQ (1000000)
 
-/*NvU32 FakeShmooVoltages[] = {
+NvU32 FakeShmooVoltages[] = {
     750,
     775,
     800,
@@ -154,29 +154,9 @@ NvRmScaledClkLimits FakepScaledCpuLimits = {
     900,
     950,
     1000,
-};*/
-
-// mmontuori
-NvU32 FakeShmooVoltages[] = {
-//# cat frequency_voltage_table
-//1000000 1000 1000
-//912000 950 950
-//750000 900 900
-//608000 850 850
-//456000 800 800
-//312000 775 775
-//216000 750 750
-
-    750,
-    775,
-    800,
-    825,
-    850,
-    875,
-    925,
 };
 
-/*NvRmScaledClkLimits FakepScaledCpuLimits = {
+NvRmScaledClkLimits FakepScaledCpuLimits = {
     NV_DEVID_CPU, // FakepScaledCpuLimits.HwDeviceId
     0, // FakepScaledCpuLimits.SubClockId
     32, // FakepScaledCpuLimits.MinKHz
@@ -189,29 +169,6 @@ NvU32 FakeShmooVoltages[] = {
     	750000,
     	912000,
 	1000000,
-    }
-};*/
-
-NvRmScaledClkLimits FakepScaledCpuLimits = {
-    NV_DEVID_CPU, // FakepScaledCpuLimits.HwDeviceId
-    0, // FakepScaledCpuLimits.SubClockId
-    32, // FakepScaledCpuLimits.MinKHz
-    // Clock table
-    {
-	216000,
-	345000,
-	476000,
-	607000,
-	738000,
-	869000,
-	1000000,
-	/*216000,
-        300000,
-        420000,
-        580000,
-        700000,
-        850000,
-        1000000,*/
     }
 };
 

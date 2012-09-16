@@ -38,7 +38,7 @@ Based on CyanogenMOD 7.2 +
 - 09/04/2012: New MROM version update notification MROM.apk
 - 09/10/2012: Updated Holo Launcher
 - 09/10/2012: Updated QuickPic
-- 09/12/2012: Updated MROM Kernel to latest build #29
+- 09/12/2012: Updated MROM Kernel to latest build #32
 - 09/13/2012: Fixed Switch back to external storage
 - 09/14/2012: Sync CyanogenMOD HEAD Repository
 - 09/15/2012: Added MROM Activity to trigger version check
