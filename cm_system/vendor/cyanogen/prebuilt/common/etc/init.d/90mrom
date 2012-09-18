@@ -1,11 +1,15 @@
 #!/system/bin/sh
-# mmontuori change for sdcard speed increase
+# mmontuori MROM changes
  
 echo 4096 > /sys/devices/platform/tegra-sdhci.3/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 
 echo 4096 > /sys/devices/platform/tegra-sdhci.2/mmc_host/mmc2/mmc2:aaaa/block/mmcblk1/queue/read_ahead_kb  
 echo 4096 > /sys/devices/virtual/bdi/179:0/read_ahead_kb 
 echo 4096 > /sys/devices/virtual/bdi/179:32/read_ahead_kb
 
-echo "powersave" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-echo "powersave" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+if grep vivow /proc/cpuinfo>/dev/null; then
+        echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+else
+	echo "powersave" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+	echo "powersave" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+fi
 
