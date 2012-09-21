@@ -63,6 +63,17 @@ ro.config.nocheckin=1
 
 # Increase VM Heap Size
 dalvik.vm.heapsize=96m
+# Enable detailed GC data and SMP dexopt
+# Force return function copy
+dalvik.vm.jniopts=forcecopy
+# Check jni before executing
+dalvik.vm.checkjni=false
+# Verify the bytecode before executing
+dalvik.vm.verify-bytecode=false
+# Force JIT execution
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-flags=v=n,o=a,u=n,m=y
+
 
 # Debug SurfaceFlinger Hardware
 debug.sf.hw=1
@@ -77,3 +88,11 @@ media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
 media.stagefright.enable-rtsp=true
 media.stagefright.enable-record=true
+
+# Force rendering on GPU
+debug.composition.type=gpu
+
+debug.egl.profiler=1
+debug.egl.hw=1
+persist.sys.ui=1
+
