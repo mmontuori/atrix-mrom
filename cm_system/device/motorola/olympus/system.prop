@@ -141,19 +141,19 @@ ro.config.nocheckin=1
 dalvik.vm.heapsize=96m
 # Enable detailed GC data and SMP dexopt
 # Force return function copy
-dalvik.vm.jniopts=forcecopy
+# dalvik.vm.jniopts=forcecopy
 # Check jni before executing
-dalvik.vm.checkjni=false
+# dalvik.vm.checkjni=false
 # Verify the bytecode before executing
-dalvik.vm.verify-bytecode=false
+# dalvik.vm.verify-bytecode=false
 # Force JIT execution
-dalvik.vm.execution-mode=int:jit
-dalvik.vm.dexopt-flags=v=n,o=a,u=n,m=y
+# dalvik.vm.execution-mode=int:jit
+# dalvik.vm.dexopt-flags=v=n,o=a,u=n,m=y
 
 #dalvik.vm.dexopt-data-only=1
 #dalvik.vm.heapstartsize=5m
 #dalvik.vm.lockprof.threshold=500
-#dalvik.vm.dexopt-flags=m=y,u=n
+dalvik.vm.dexopt-flags=m=y,u=n
 #dalvik.vm.dexopt-flags=m=v,o=y
 #dalvik.vm.dexopt-flags=m=y,u=n,o=y
 #dalvik.vm.stack-trace-file=/data/anr/traces.txt
@@ -178,7 +178,7 @@ persist.sys.vold.switchexternal=1
 # Force rendering on GPU
 debug.composition.type=gpu
 
-debug.egl.profiler=1
-debug.egl.hw=1
-persist.sys.ui=1
+# debug.egl.profiler=1
+# debug.egl.hw=1
+# persist.sys.ui=1
 

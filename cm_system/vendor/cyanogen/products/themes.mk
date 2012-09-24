@@ -1,10 +1,10 @@
 # Theme packages
 PRODUCT_PACKAGES += \
        Androidian \
-       GingerBlurB \
+       Mixer-MROM \
        Cyanbread
 
 PRODUCT_PROPERTY_OVERRIDES += \
-       persist.sys.themeId = GingerBlurB \
-       persist.sys.themePackageName = com.kevin2516.theme.GingerBlurB
+       persist.sys.themeId = MixerMROM \
+       persist.sys.themePackageName =com.mrdsl.theme.mixer 
 

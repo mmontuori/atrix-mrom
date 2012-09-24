@@ -31,9 +31,15 @@ fi
 
 cd $APK_DIR
 
-zip -r $CM_FILE system
+if [ "$2" == "encore" ]; then
+	zip --exclude system/app/HoloLauncher.apk -r $CM_FILE system
+else
+	zip -r $CM_FILE system
+fi
 #zip -r $CM_FILE data
-zip -d $CM_FILE /system/app/ADWLauncher.apk
+if [ "$2" != "encore" ]; then
+	zip -d $CM_FILE /system/app/ADWLauncher.apk
+fi
 #zip -d $CM_FILE /system/app/CMStats.apk
 
 #cd $TMP_DIR

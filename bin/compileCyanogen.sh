@@ -46,13 +46,17 @@ for file in $files; do
 	#echo cm_file:$CM_DIR/$file
 	if ! diff $file $CM_DIR/$file>/dev/null; then
 		if [ "$1" != "diff" ]; then
-			echo Applying changes to $CM_DIR/$cm_file from $file...
+			echo Applying changes to $CM_DIR/$file from $file...
 			cp $file $CM_DIR/$file
 		else
-			echo files $CM_DIR/$cm_file and $file are different...
+			echo files $CM_DIR/$file and $file are different...
 		fi
 	fi
 done
+
+if [ "$1" == "diff" ]; then
+	exit
+fi
 
 if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "90mrom"; then
 	echo "Updating $CM_DIR/vendor/cyanogen/products/common.mk..."
@@ -63,17 +67,13 @@ if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "90mrom"; then
 	echo "# end of mmontuori change" >> $CM_DIR/vendor/cyanogen/products/common.mk
 fi
 
-if ! cat $CM_DIR/devices/bm/encore/encore.mk | grep "sysctl.conf"; then
-	echo "Updating $CM_DIR/devices/bm/encore/encore.mk..."
-	echo "" >> $CM_DIR/devices/bm/encore/encore.mk
-	echo "# mmontuori mrom speed" >> $CM_DIR/devices/bm/encore/encore.mk
-	echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/devices/bm/encore/encore.mk
-    	echo "device/bn/encore/config/sysctl.conf:system/etc/sysctl.conf" >> $CM_DIR/devices/bm/encore/encore.mk
-	echo "# end of mmontuori change" >> $$CM_DIR/devices/bm/encore/encore.mk
-fi
-
-if [ "$1" == "diff" ]; then
-	exit
+if ! cat $CM_DIR/device/bn/encore/encore.mk | grep "sysctl.conf"; then
+	echo "Updating $CM_DIR/device/bn/encore/encore.mk..."
+	echo "" >> $CM_DIR/device/bn/encore/encore.mk
+	echo "# mmontuori mrom speed" >> $CM_DIR/device/bn/encore/encore.mk
+	echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/device/bn/encore/encore.mk
+    	echo "device/bn/encore/config/sysctl.conf:system/etc/sysctl.conf" >> $CM_DIR/device/bn/encore/encore.mk
+	echo "# end of mmontuori change" >> $CM_DIR/device/bn/encore/encore.mk
 fi
 
 #cd packages/apps/Settings/res
