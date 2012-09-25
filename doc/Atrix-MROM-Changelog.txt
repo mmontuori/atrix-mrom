@@ -50,3 +50,6 @@ Based on CyanogenMOD 7.2 +
 - 09/23/2012: Fixed for some users the Home and Search button does not work
 - 09/23/2012: Fixed lost lock screen for some users
 - 09/23/2012: Added /system/bin/fullgpu script to enable/disable full GPU rendering
+- 09/24/2012: Resync all native drivers and binaries
+- 09/24/2012: Added /system/bin/gpsfix234 script to enable/disable GPS GB 2.3.4 fix
+- 09/25/2012: Fix MIUI Camera FC on Color Selection

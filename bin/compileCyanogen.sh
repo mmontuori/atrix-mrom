@@ -33,6 +33,16 @@ else
 	device=olympus
 fi
 
+if test -L ${CM_DIR}/out; then
+	rm ${CM_DIR}/out
+fi
+
+if ! test -d ${CM_DIR}/out.${device}; then
+	mkdir ${CM_DIR}/out.${device}
+fi
+
+ln -s ${CM_DIR}/out.${device} ${CM_DIR}/out
+
 cd $REPO_HOME
 
 cp doc/Atrix-MROM-Changelog.txt ${CM_DIR}/vendor/cyanogen/CHANGELOG.mkdn

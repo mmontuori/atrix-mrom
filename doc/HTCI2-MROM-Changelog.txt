@@ -35,3 +35,14 @@ Based on CyanogenMOD 7.2 +
 - 09/13/2012: Fixed Switch back to external storage
 - 09/14/2012: Sync CyanogenMOD HEAD Repository
 - 09/15/2012: Added MROM Activity to trigger version check
+- 09/17/2012: Remove GingerBlurB Theme
+- 09/17/2012: Added Mixer-MROM Theme
+- 09/22/2012: Updated QuickPic
+- 09/23/2012: Sync CyanogenMOD HEAD Repository
+- 09/23/2012: Updated HoloLauncher
+- 09/23/2012: Fixed for some users the Home and Search button does not work
+- 09/23/2012: Fixed lost lock screen for some users
+- 09/23/2012: Added /system/bin/fullgpu script to enable/disable full GPU rendering
+- 09/24/2012: Resync all native drivers and binaries
+- 09/24/2012: Added /system/bin/gpsfix234 script to enable/disable GPS GB 2.3.4 fix
+- 09/25/2012: Fix MIUI Camera FC on Color Selection
