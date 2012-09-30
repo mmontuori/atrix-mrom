@@ -72,8 +72,8 @@ ro.camera.sound.disabled=1
 ro.ril.disable.power.collapse=1
 pm.sleep_mode=1
 
-# Ringing Will Start Immediately
-ro.telephony.call_ring.delay=0
+# Ringing Will Start After 500ms
+ro.telephony.call_ring.delay=500
 
 # Increase Performance
 debug.performance.tuning=1

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-APK_DIR=~/android/apk
+APK_DIR=~/git_repos/atrix-mrom/cm_bigit_repos/atrix-mrom/cm_bin
 TMP_DIR=/tmp/cm_extract
 
-if [ "$1" == "" ]; then
-	echo "usage: addGapps.sh {ROM zip file}"
+if [ "$1" == "" ] || [ "$2" != "" ]; then
+	echo "usage: addGapps.sh {ROM zip file} {device}"
 	exit 1
 fi
 
@@ -31,16 +31,20 @@ fi
 
 cd $APK_DIR
 
-if [ "$2" == "encore" ]; then
-	zip --exclude system/app/HoloLauncher.apk -r $CM_FILE system
-else
-	zip -r $CM_FILE system
-fi
+zip -r $CM_FILE system --exclude @exclude.${2}
+
 #zip -r $CM_FILE data
+
 if [ "$2" != "encore" ]; then
 	zip -d $CM_FILE /system/app/ADWLauncher.apk
 fi
+
 #zip -d $CM_FILE /system/app/CMStats.apk
+
+if [ "$2" == "encore" ]; then
+	zip -d $CM_FILE /system/app/Camera.apk
+fi
+
 
 #cd $TMP_DIR
 #unzip $CM_FILE system/build.prop

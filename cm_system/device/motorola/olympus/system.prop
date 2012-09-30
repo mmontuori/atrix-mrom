@@ -9,7 +9,6 @@ rild.libpath=/system/lib/libmoto_ril.so
 persist.ril.mux.noofchannels=9
 persist.ril.mux.ttydevice=/dev/ttyHS3
 ro.telephony.call_ring.multiple=false
-ro.telephony.call_ring.delay=500
 persist.ril.modem.ttydevice=/dev/ttySPI0
 persist.ril.modem.mode=2
 persist.ril.features=0x24
@@ -77,8 +76,8 @@ ro.authentec.fingerprint.so=/system/lib/libam2app.so
 ro.ril.disable.power.collapse=1
 pm.sleep_mode=1
 
-# Ringing Will Start Immediately
-ro.telephony.call_ring.delay=0
+# Ringing Will Start After 500ms
+ro.telephony.call_ring.delay=500
 
 # Increase Performance
 debug.performance.tuning=1
