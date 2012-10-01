@@ -85,9 +85,6 @@ debug.performance.tuning=1
 # Video Acceleration Enabled
 video.accelerate.hw=1
 
-# Increasing The Video Recording Quality
-ro.media.enc.hprof.vid.bps=8000000
-
 # Signal Tweaks
 ro.ril.hep=1
 ro.ril.enable.dtm=1
