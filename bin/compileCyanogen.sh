@@ -27,25 +27,30 @@ if [ "$1" == "getfiles" ] && [ "$2" == "" ]; then
 fi
 
 
-if [ "$1" != "" ]; then
-	device=$1
-else
-	device=olympus
+if [ "$1" == "" ]; then
+	echo "./compileCyanogen.sh {device}"
+	exit
 fi
+
+device=$1
 
 if test -L ${CM_DIR}/out; then
 	rm ${CM_DIR}/out
 fi
 
-if ! test -d ${CM_DIR}/out.${device}; then
+if ! test -d ${CM_DIR}/out.${device} && [ "$1" != "diff" ]; then
 	mkdir ${CM_DIR}/out.${device}
 fi
 
-ln -s ${CM_DIR}/out.${device} ${CM_DIR}/out
+if [ "$1" != "diff" ]; then
+	ln -s ${CM_DIR}/out.${device} ${CM_DIR}/out
+fi
 
 cd $REPO_HOME
 
-cp doc/Atrix-MROM-Changelog.txt ${CM_DIR}/vendor/cyanogen/CHANGELOG.mkdn
+if [ "$1" != "diff" ]; then
+	cp doc/Atrix-MROM-Changelog.txt ${CM_DIR}/vendor/cyanogen/CHANGELOG.mkdn
+fi
 
 cd $REPO_HOME/cm_system
 

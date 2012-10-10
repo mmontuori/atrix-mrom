@@ -1,10 +1,10 @@
 #!/bin/bash
 
-APK_DIR=~/git_repos/atrix-mrom/cm_bigit_repos/atrix-mrom/cm_bin
+APK_DIR=~/git_repos/atrix-mrom/cm_bin
 TMP_DIR=/tmp/cm_extract
 
-if [ "$1" == "" ] || [ "$2" != "" ]; then
-	echo "usage: addGapps.sh {ROM zip file} {device}"
+if [ "$1" == "" ] || [ "$2" == "" ]; then
+	echo "usage: addApks.sh {ROM zip file} {device}"
 	exit 1
 fi
 
@@ -29,9 +29,11 @@ if ! test -d $APK_DIR; then
 	exit 1
 fi
 
+cur_dir=`pwd`
+
 cd $APK_DIR
 
-zip -r $CM_FILE system --exclude @exclude.${2}
+zip -r $CM_FILE system --exclude @${cur_dir}/exclude.${2}
 
 #zip -r $CM_FILE data
 
