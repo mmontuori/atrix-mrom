@@ -62,6 +62,10 @@ for file in $files; do
 	if ! diff $file $CM_DIR/$file>/dev/null; then
 		if [ "$1" != "diff" ]; then
 			echo Applying changes to $CM_DIR/$file from $file...
+			tmp_dir=`dirname $CM_DIR/$file`
+			if ! test -d $tmp_dir; then
+				mkdir -p $tmp_dir
+			fi
 			cp $file $CM_DIR/$file
 		else
 			echo files $CM_DIR/$file and $file are different...

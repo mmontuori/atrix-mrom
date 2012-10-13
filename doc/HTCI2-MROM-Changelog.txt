@@ -46,3 +46,6 @@ Based on CyanogenMOD 7.2 +
 - 09/24/2012: Resync all native drivers and binaries
 - 09/24/2012: Added /system/bin/gpsfix234 script to enable/disable GPS GB 2.3.4 fix
 - 09/25/2012: Fix MIUI Camera FC on Color Selection
+- 10/07/2012: Updated MROM.apk v1.5 provided by Ravilov
+- 10/07/2012: Added Battery Fix v0.20 App by Ravilov
+- 10/08/2012: Synchronized CyanogenMOD HEAD repository
