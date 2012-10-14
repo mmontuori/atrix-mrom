@@ -1,0 +1,21 @@
+Partition table
+
+mmcblk0p1  - nvmotota - here goes bootloader with microboot (ap20bl.img) from ota updates, installing on first reboot after updating
+mmcblk0p2  - CDT (codegoup description table - cdt.bin)
+mmcblk0p3  - PDS (yaffs2 - /etc/pds)
+mmcblk0p4  - EBR
+mmcblk0p5  - SP
+mmcblk0p6  - CID
+mmcblk0p7  - MSC (misc) - empty
+mmcblk0p8  - LOG (logo)
+mmcblk0p9  - KPA (kernel panic)
+mmcblk0p10 - SOS (recovery image)
+mmcblk0p11 - LNX (boot image)
+mmcblk0p12 - APP (system image)
+mmcblk0p13 - OSH (webtop image)
+mmcblk0p14 - CDR (cdrom image)
+mmcblk0p15 - CAC (cache)
+mmcblk0p16 - UDA (userdata)
+mmcblk0p17 - PIA (preinstall image)
+mmcblk0p18 - SDC (sdcard)
+mmcblk0p19 - GPT (gpt)
