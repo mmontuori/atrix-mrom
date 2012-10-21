@@ -77,23 +77,23 @@ if [ "$1" == "diff" ]; then
 	exit
 fi
 
-if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "90mrom"; then
-	echo "Updating $CM_DIR/vendor/cyanogen/products/common.mk..."
-	echo "" >> $CM_DIR/vendor/cyanogen/products/common.mk
-	echo "# mmontuori mrom speed" >> $CM_DIR/vendor/cyanogen/products/common.mk
-	echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/vendor/cyanogen/products/common.mk
-    	echo "vendor/cyanogen/prebuilt/common/etc/init.d/90mrom:system/etc/init.d/90mrom" >> $CM_DIR/vendor/cyanogen/products/common.mk
-	echo "# end of mmontuori change" >> $CM_DIR/vendor/cyanogen/products/common.mk
-fi
+#if ! cat $CM_DIR/vendor/cyanogen/products/common.mk | grep "90mrom"; then
+	#echo "Updating $CM_DIR/vendor/cyanogen/products/common.mk..."
+	#echo "" >> $CM_DIR/vendor/cyanogen/products/common.mk
+	#echo "# mmontuori mrom speed" >> $CM_DIR/vendor/cyanogen/products/common.mk
+	#echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/vendor/cyanogen/products/common.mk
+    	#echo "vendor/cyanogen/prebuilt/common/etc/init.d/90mrom:system/etc/init.d/90mrom" >> $CM_DIR/vendor/cyanogen/products/common.mk
+	#echo "# end of mmontuori change" >> $CM_DIR/vendor/cyanogen/products/common.mk
+#fi
 
-if ! cat $CM_DIR/device/bn/encore/encore.mk | grep "sysctl.conf"; then
-	echo "Updating $CM_DIR/device/bn/encore/encore.mk..."
-	echo "" >> $CM_DIR/device/bn/encore/encore.mk
-	echo "# mmontuori mrom speed" >> $CM_DIR/device/bn/encore/encore.mk
-	echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/device/bn/encore/encore.mk
-    	echo "device/bn/encore/config/sysctl.conf:system/etc/sysctl.conf" >> $CM_DIR/device/bn/encore/encore.mk
-	echo "# end of mmontuori change" >> $CM_DIR/device/bn/encore/encore.mk
-fi
+#if ! cat $CM_DIR/device/bn/encore/encore.mk | grep "sysctl.conf"; then
+	#echo "Updating $CM_DIR/device/bn/encore/encore.mk..."
+	#echo "" >> $CM_DIR/device/bn/encore/encore.mk
+	#echo "# mmontuori mrom speed" >> $CM_DIR/device/bn/encore/encore.mk
+	#echo "PRODUCT_COPY_FILES += \\" >> $CM_DIR/device/bn/encore/encore.mk
+    	#echo "device/bn/encore/config/sysctl.conf:system/etc/sysctl.conf" >> $CM_DIR/device/bn/encore/encore.mk
+	#echo "# end of mmontuori change" >> $CM_DIR/device/bn/encore/encore.mk
+#fi
 
 #cd packages/apps/Settings/res
 

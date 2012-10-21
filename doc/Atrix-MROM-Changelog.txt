@@ -1,6 +1,6 @@
 MROM Changelog
 
-Based on CyanogenMOD 7.2 +
+Based on CyanogenMOD 7.2 HEAD repository +
 
 - 08/09/2012: Recompiled CyanogenMod 7.2
 - 08/10/2012: Recompiled CyanogenMod Atrix Kernel faux123, removed all debug attributes
@@ -56,3 +56,6 @@ Based on CyanogenMOD 7.2 +
 - 10/07/2012: Updated MROM.apk v1.5 provided by Ravilov
 - 10/07/2012: Added Battery Fix v0.20 App by Ravilov (Atrix)
 - 10/08/2012: Synchronized CyanogenMOD HEAD repository
+- 10/19/2012: Updated QuickPic
+- 10/19/2012: Updated Battery Fix v0.21 App by Ravilov (Atrix)
+- 10/19/2012: Sync CyanogenMOD HEAD Repository
