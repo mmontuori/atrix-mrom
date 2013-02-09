@@ -1,0 +1,97 @@
+#!/bin/bash
+
+function usage {
+	echo ""
+	echo "usage: ramdisk {-u|-p} {-f file} [-d directory]"
+	echo ""
+	echo "options:"
+	echo "    -u = unpack"
+	echo "    -p = pack"
+	echo "    -f file = ramdisk file defaults to ramdisk.gz"
+	echo "    -d directory = directory to pack/unpack default to ramdisk"
+}
+
+unpack=false
+pack=false
+
+while getopts “hupd:f:” OPTION
+do
+	case $OPTION in
+	h)
+		usage
+		exit
+		;;
+	u)
+		unpack=true
+		;;
+	p)
+		pack=true
+		;;
+	f)
+		ramdiskfile=$OPTARG
+		;;
+	d)
+		ramdiskdir=$OPTARG
+		;;
+	esac
+done
+
+if [ "$ramdiskfile" == "" ]; then
+	ramdiskfile="ramdisk.gz"
+fi
+
+if [ "$ramdiskdir" == "" ]; then
+	ramdiskdir="ramdisk"
+fi
+
+if [ "$pack" == "false" ] && [ "$unpack" == "false" ]; then
+	usage
+	exit
+fi
+
+if [ "$unpack" == "true" ]; then
+
+	if test -d $ramdiskdir && [ "$unpack" == "true" ]; then
+        	echo "ERROR: directory $ramdiskdir already exists!"
+        	exit
+	fi
+
+	if ! test -f $ramdiskfile; then
+		echo "ERROR: file $ramdiskfile not found!"
+		exit
+	fi
+
+	if ! mkdir $ramdiskdir; then
+		echo "ERROR: cannot create directory $ramdiskdir"
+		exit
+	fi
+
+	if ! cd $ramdiskdir; then
+		echo "ERROR: cannot change directory to $ramdiskdir"
+		exit
+	fi
+
+	echo -n "unpacking $ramdiskfile to directory $ramdiskdir..."
+	if ! gunzip -c ../$ramdiskfile | cpio -i 2>/dev/null; then
+		echo "ERROR: cannot unpack $ramdiskfile"
+		exit
+	fi
+	echo "done"
+fi
+
+if [ "$pack" == "true" ]; then
+
+	if test -f $ramdiskfile; then
+		echo "ERROR: file $ramdiskfile exists!"
+		exit
+	fi
+
+	if ! cd $ramdiskdir; then
+                echo "ERROR: cannot change directory to $ramdiskdir"
+                exit
+        fi
+
+	echo -n "packing $ramdiskfile from directory $ramdiskdir..."
+	find . | cpio -o -H newc 2>/dev/null | gzip > ../$ramdiskfile
+	echo "done"
+fi
